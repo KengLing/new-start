@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		input{
+			width: 72px;
+			height: 42px;
+			background: #fff;
+			line-height: 25px;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" value="全选" >
+</body>
+<script type="text/javascript">
+	//通过DOM获取元素的方法得到按钮
+		var button=document.getElementsByTagName("input");
+	 //给按钮绑定事件，对按钮进行判断
+	 	button[0].onclick=function(){
+	 		if (this.value=="全选") {
+	 			this.value="反选";
+	 		}else if(this.value=="反选"){
+	 			this.value="全选";
+	 		}
+	 	}
+</script>
+</html>

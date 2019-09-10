@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			width: 300px;
+			height: 300px;
+			border: 1px solid #333;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" value="开始">
+<br><br>
+<div id="box"></div>
+<!-- js -->
+<script type="text/javascript">
+	var bos=document.getElementsByTagName("input")[0];
+	var box=document.getElementById("box");
+	var hello=[];
+	var num=0;
+	bos.onclick=function(){
+		setInterval(function(){
+			if(num==10){
+				box.innerHTML="";
+				return;
+			}else{
+				box.innerHTML+="hello"+" ";
+			}
+			num++;
+		},1000);
+	}
+</script>
+</body>
+</html>

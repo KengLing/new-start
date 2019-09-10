@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" value="点击获取浏览器信息" id="browser">
+	<!-- js -->
+	<script type="text/javascript">
+			var bth=document.getElementById("browser");
+			bth.onclick=function tor(){
+				var pc=navigator.userAgent;
+				if(pc.indexOf("Chrome")>1){
+						alert("您使用的浏览器是谷歌");
+				}else if(pc.indexOf("Firefox")>1){
+						alert("您使用的浏览器是火狐")
+				}else{
+					alert("我不知道您使用的是啥子")
+				}
+			}
+	</script>
+</body>
+</html>

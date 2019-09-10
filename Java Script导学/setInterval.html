@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>闪闪烁的文字</title>
+	<style type="text/css">
+		div{
+			width:200px;
+			height:200px;
+			line-height:200px;
+			border:2px solid gray;
+			text-align:center;
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<h3>会闪烁的文字</h3>
+	<div id="text"> </div>
+	<!-- js内容 -->
+	<script type="text/javascript">
+			var text=document.getElementById("text");
+			var index=0;
+			setInterval(function(){
+				// 判断index的值是否等于0
+				if(index==0){
+					text.innerHTML="★★★今日特卖★★★";
+					// console.log(text);
+					index++;
+				}else{
+					text.innerHTML="☆☆☆今日特卖☆☆☆"
+					index--;
+				}
+			},500);
+	</script>
+</body>
+</html>

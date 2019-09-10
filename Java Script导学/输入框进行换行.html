@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" value="点击">
+	<script type="text/javascript">
+			// 获取按钮的对象
+			var btn=document.getElementsByTagName("input")[0];
+			btn.onclick=function(){
+				var text=prompt("当点击确定时，\n按钮的文字会变为输入的文本");
+				// 对text进行判断是否变为输入的内容
+				if(text){
+					this.value=text;
+				}else{
+					return;
+				}
+			}
+	</script>
+</body>
+</html>

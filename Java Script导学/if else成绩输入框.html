@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+			//保存由用户输入成绩
+			var score=prompt("请输入成绩");
+			if(score<0 && score>100){
+				alert("输入有误");
+			}else if(score<60){
+				alert("不及格");
+			}else if(score>=60 && score<70){
+				alert("及格");
+			}else if(score>=70 && score<80){
+				alert("一般");
+			}else if(score>=80 && score<90){
+				alert("良好");
+			}else if(score>=90 ){
+				alert("优秀");
+			}
+	</script>
+</body>
+</html>

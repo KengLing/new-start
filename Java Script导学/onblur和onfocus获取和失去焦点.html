@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.scro{
+			border: 1px solid red;
+		}
+		.boss{
+			float: left;
+		}
+		.bth{
+			display: none;
+		}
+	</style>
+	<script type="text/javascript">
+			window.onload=function(){
+				// 获取one和two的事件
+				var one=document.getElementById("box");
+				var two=document.getElementById("bth");
+				// one获取焦点
+				one.onfocus=function(){
+					two.style.display="inline";
+				}
+				// one失去焦点
+				one.onblur=function(){
+					// 判断输入框输入的是否为空
+					if(one.value==""){
+						two.innerHTMl="用户名不能为空";
+						one.className="scor";
+					}
+				}
+			}
+	</script>
+</head>
+<body>
+	<div class="boos">
+		姓名:
+		<input type="text" id="box" class="box">
+		<span id="bth" class="bth">请输入您的名字</span>
+	</div>
+</body>
+</html>

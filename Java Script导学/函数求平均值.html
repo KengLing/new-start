@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+			function getAvg(){
+				//求多个数的和
+				var sum=0,len=arguments.length,i;
+				for(i=0;i<len;i++){
+					 //由坐标决定值的个数
+					 sum+=arguments[i];
+				}
+				//求平均数
+				return sum / len;
+			}
+			//parseInt 求正整数
+			alert(parseInt(getAvg(22,33,44,55,66)));
+	</script>
+</body>
+</html>

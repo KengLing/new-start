@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" value="操作页面" id="button">
+	<script type="text/javascript">
+	// 获取按钮对象，用变量id去接收
+	 var button=document.getElementById("button");
+	 //当点击页面按钮时，弹出确认框
+	 button.onclick=function(){
+	 	var arr=confirm("刷新页面么？");
+	 	// 对arr进行判断，返回是true，重新加载当前显示
+	 	if(arr){
+	 		location.reload(true);
+	 	}else{
+	 		location.replace('http://www.imooc.com');
+	 	}
+	 }
+	</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+			 #div{overflow:auto;width:200px;height:200px;border:2px solid gray;margin-bottom:20px;}
+		    #content{width:200px;height:100px;border:2px solid gray;}
+	</style>
+</head>
+<body>
+		<div id="div">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod,tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo,consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse,cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non,proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div id="content"></div>
+		<script type="text/javascript">
+		var div=document.getElementById("div");
+		var content=document.getElementById("content");
+		// 绑定滚动条滚动触发事件
+		div.onscroll=function(){
+			div.style.color="#f00";
+			// 获取标签元素的内容
+			content.innerHTML="内容滚动了";
+		}
+		//绑定鼠标滑动事件
+		div.onmouseover=function(){
+			div.style.color="green";
+		}
+		</script>
+</body>
+</html>

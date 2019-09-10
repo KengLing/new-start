@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+			for(var count = 0;count<=5;){			
+			var phone = prompt("请输入您的11位手机号码");
+			if(phone.length == 11){
+			parseInt(phone);
+			if(Number(phone)){
+			if(!isNaN(phone)){
+			alert("输入正确！");
+			break;
+			}
+			}
+			}else {
+			if(count==5){
+			alert("输入超过5次，锁定账号1小时");
+			break;
+			}
+			alert("输入的号码必须为11位数字");
+			count++
+			}
+}
+	</script>
+</body>
+</html>

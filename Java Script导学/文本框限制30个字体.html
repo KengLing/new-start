@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>字数限制在30字内，<span>您还可以输入</span><b>30</b> 字</p>
+		<textarea cols="50"  rows="7"  id="text"></textarea>
+		<script type="text/javascript">
+					// 获取text的ID的事件
+				var text=document.getElementById("text");
+					// 获取b和span的事件
+				var b=document.getElementsByTagName("b");
+				var span=document.getElementsByTagName('span');
+				// 绑定键盘松开时的事件
+				document.onkeyup=function(){
+					var len=text.value.length;
+					var one=30-len;
+					if(one<0){
+						b[0].innerHTML=Math.abs(one);
+						span[0].innerHTML="您已超出";
+					}else{
+						b[0].innerHTML=one;
+						span[0].innerHTML="您还可以输入";
+					}
+				}
+
+		</script>
+</body>
+</html>

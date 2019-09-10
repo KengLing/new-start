@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.bth{
+	  color:red;
+	}
+	.bthe{
+		color:yellow;
+	}
+	</style>
+	<script type="text/javascript">
+			window.onload=function(){
+				var num1=document.getElementById("bth");
+				num1.onclick=function(){
+					this.className="bth";
+				}
+				num1.onmouseout=function(){
+					this.className="bthe";
+				}
+			}
+	</script>
+</head>
+<body>
+	<input type="button" value="点击改变按钮字体颜色" id="bth">
+</body>
+</html>

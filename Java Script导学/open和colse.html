@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" id="box" value="打开慕课网">
+	<input type="button" id="bth" value="关闭本页面">
+
+	<script type="text/javascript">
+			// 获取标签名称
+			var box=document.getElementsByTagName("input")[0];
+			var bth=document.getElementsByTagName("input")[1];
+			// 绑定点击按钮
+			box.onclick=function(){
+				// 绑定打开新的子窗口
+				window.close();
+			}
+			box.onclick=function(){
+				// 绑定关闭子窗口事件
+				window.open("http://www.imooc.com","mu","width=200,heigth=400,left=20,top=20,toolbar=no,menubar=no,scorllbars=no,location=no,status=no");
+			}
+	</script>
+</body>
+</html>
